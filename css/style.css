@@ -1,0 +1,171 @@
+/** global */
+ul{
+    list-style-type: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.ct{
+    text-align: center;
+}
+
+.lt{
+    text-align: left;    
+}
+
+.white{
+    color: white;
+}
+
+.blued{
+    color: #9BC7F5;
+}
+
+.bkblued{
+    background-color: #9BC7F5;
+}
+
+.sm-op{
+    opacity: 0.6;
+}
+
+.fll-wdt{
+    width: 100%;
+}
+
+.fll-hgt{
+    height: 100%;
+}
+
+.abs{
+    position: absolute;
+}
+
+.top-layer{
+    z-index: 50;
+}
+
+.inlb{
+    display: inline-block;
+}
+
+.blk{
+    display: block;
+}
+
+.rght{
+    right: 0px;
+}
+
+.sm-r-mrg{
+    margin-right: 5px; 
+}
+
+/** main */
+footr{
+    bottom: 0px;
+    height : 70px;
+    background-color:rgb(50,50,50);
+}
+
+headr{
+    top: 0px;
+    height : 70px;
+}
+
+.main-content{
+    padding: 70px 0px 70px 0;
+}
+
+.filter-bar {
+    display: block;
+    background-color: rgb(245, 245, 245);
+    height: 50px;
+}
+
+.filter-btns{
+    padding: 9px 3% 0px 3%;
+}
+
+.filter-btns a{
+    border: #9BC7F5 2px solid;
+    color: #9BC7F5;
+    font-weight: bold;
+}
+
+.slcted{
+    background-color: #9BC7F5;
+    color: white !important;
+}
+
+.dsbl{
+    opacity: 0.4 !important;
+}
+
+.content-list{
+    overflow: auto;
+}
+
+.content-list ul li:last-child {
+    border-bottom : none;
+}
+
+.content-list ul li {
+    height: 100px;
+    border-bottom: #E8E8E8 1px solid;
+    text-align: center;
+    position:relative;
+}
+
+.announces-nb{
+    padding-top: 35px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.ann-img{
+    max-width: 70px;
+    height: 80px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.support-btn{
+    width: 80%;
+    height: 80%;
+    margin-top: 10px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.buble{
+    background-color: red;
+    top:-5px;
+    right:-5px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.ann-txt{
+    position: relative;
+    top: -20px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.ann-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ann-text{
+    font-size: 16px;
+}
+.ann-rec{
+    font-size: 13px;
+}
+

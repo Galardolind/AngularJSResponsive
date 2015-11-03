@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="webSite">
+    <head>
+        <title>example.com - AngularJS, Bootstrap, Responsive</title>
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!-- jquery -->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!-- angular -->
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-route.min.js"></script>
+        <script type="text/javascript"  src="js/angular-css.min.js"></script>
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body ng-controller="main" style="overflow:hidden">
+        <!-- header -->
+    <headr class="fll-wdt abs top-layer bkblued"></headr>
+
+    <!-- content -->
+    <div class="main-content fll-hgt fll-wdt">
+        <!-- filter bar -->
+        <div class="filter-bar fll-wdt"> 
+            <div class="btn-group btn-group-justified filter-btns dsbl">
+                <a href="#filterA" class="btn btn-default disabled slcted">Selected & disable</a>
+                <a href="#filterB" class="btn btn-default disabled">Not selected & disable</a>
+            </div>
+        </div>
+
+        <!-- content list -->
+        <div class="content-list fll-wdt">
+            <ul ng-controller="listCtrl">
+                <li>
+                    <div class="fll-wdt fll-hgt ct announces-nb">
+                        {{elList.length}} Element{{elList.length>1?'s':''}} in the list
+                    </div>
+                </li>
+                <li ng-repeat="el in elList">
+                    <div class="ann-img inlb">
+                        <img class="img-responsive" src="{{el.img}}" alt=""/>
+                        <div class="buble abs white" ng-show="el.buble>0">{{el.buble}}</div>
+                    </div>
+                    <div class="inlb ann-txt lt">
+                        <span class="blk ann-name blued">{{el.name}}</span>
+                        <span class="blk ann-text">{{el.text}}</span>
+                        <span class="glyphicon glyphicon-ok inlb sm-r-mrg blued"></span><span class="inlb ann-rec"> {{el.nbRec}} Like{{(el.nbRec>1)?'s':''}}</span>
+                    </div>
+                    <div class="nav-arrow abs fll-hgt rght">
+                        <a class="fll-hgt fll-wdt" href="{{el.url}}">
+                            <span class="fll-hgt fll-wdt blued">&gt;</span>
+                        </a>
+                    </div>
+                </li>
+                <li> 
+                    <a href="#Support" class="btn btn-lg support-btn white bkblued">
+                        <span class="glyphicon glyphicon-headphones"></span> Support button
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footr class="fll-wdt abs top-layer"></footr>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
